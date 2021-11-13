@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Footer.css">
+    <title>SignIn / SignUp</title>
+</head>
+<style>
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        letter-spacing: .06rem;
+    }
+
+      body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      }
+
+      a{
+          color: white;
+      } 
+      .s1{
+          background-color: #3a5d64;
+          text-align: center;
+          height: 45px;
+          padding: 1%;
+          box-sizing: border-box;
+          font-size: 15px;
+          color: white;
+      }
+
+    /* signIn-signUp */
+    .signIn-signUp {
+       width: 100%;
+       height: 40px;
+       padding: 8px;
+       box-sizing: border-box;
+       background-color: #fdfdf9;
+       text-align: right;
+       color: #7aa9b3;
+       font-size: 12px;
+       /* font-weight: 100; */
+       vertical-align: middle;
+       padding-right: 5%;
+     }
+    i{
+      font-size: 20px;
+      vertical-align: middle;
+      cursor: pointer;
+     }
+    a{
+      color: #7aa9b3;
+      text-decoration: none;
+     }
+     .login{
+       cursor: pointer;
+     }
+     .sign-up{
+         margin-top: 20px;
+         margin-bottom: 25px;
+     }
+
+
+/* popup */
+.popup{
+    width: 40%;
+    margin: auto;
+    border: .5px solid rgb(216, 212, 212);
+    padding: 10px;
+    border-radius: 4px;
+}
+.popup .close-btn {
+  position:absolute;
+  font-size: 60px;
+  font-weight: 100;
+  top:10px;
+  right:10px;
+  width:25px;
+  height:25px;
+  color:black;
+  text-align:center;
+  line-height:15px;
+  cursor:pointer;
+}
+.popup .form h2 {
+  text-align:center;
+  color:#222;
+  margin:10px 0px 20px;
+  font-size:24px;
+  font-weight: 500;
+}
+.popup .form .form-element {
+  margin:15px 0px;
+}
+.popup .form .form-element label {
+  font-size:14px;
+  color:#222;
+}
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="password"] {
+  margin-top:5px;
+  margin-bottom: 35px;
+  display:block;
+  width:100%;
+  padding:10px;
+  outline:none;
+  border:1px solid #aaa;
+  border-radius:4px;
+}
+.popup .form .form-element input[type="checkbox"] {
+  margin-right:5px;
+}
+.popup .form .form-element button {
+  width:100%;
+  height:40px;
+  border:none;
+  outline:none;
+  font-size:16px;
+  background:#495369;
+  color:#f5f5f5;
+  border-radius:2px;
+  cursor:pointer;
+}
+.popup .form .form-element button:hover {
+  width:100%;
+  height:40px;
+  border:none;
+  outline:none;
+  font-size:16px;
+  background:#f5f5f5;
+  color: black;
+  border-radius:2px;
+  cursor:pointer;
+  border: 1px solid black;
+}
+.popup .form .form-element a {
+  display:block;
+  text-align:right;
+  font-size:15px;
+  color:#1a79ca;
+  text-decoration:none;
+  font-weight:600;
+}
+#forgot{
+  font-size: 12px;
+  font-weight: 50;
+  text-align: center;
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+.sign-up{
+  text-align: center;
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+}
+.create-account button{
+  width:100%;
+  height:40px;
+  border:none;
+  outline:none;
+  font-size:16px;
+  background:#fff;
+  color:black;
+  border-radius:2px;
+  cursor:pointer;
+  margin-top: 27px;
+  border: 1px solid black;
+}
+.create-account button:hover{
+  width:100%;
+  height:40px;
+  border:none;
+  outline:none;
+  font-size:16px;
+  background:#495369;
+  color:#fff;
+  border-radius:2px;
+  cursor:pointer;
+  margin-top: 27px;
+  border: 1px solid black;
+}
+
+/* navbar */
+
+nav{
+  position: sticky;
+  top: 0;
+  background: #fdfdf9;
+  width: 100%;
+  height: 110px;
+  margin: auto;
+  border-top: 1px solid rgb(204, 199, 199);
+  border-bottom: 1px solid rgb(204, 199, 199);
+}
+nav .wrapper {
+  margin: auto;
+  height: 110px;
+  align-items: center;
+}
+.logo img{
+  height: 16px;
+  width: 270px;
+  margin-left: 40%;
+  margin-top: 25px;
+  
+}
+.nav-links{
+  color: black;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-top: 35px;
+}
+ul li a {
+  color: black;
+  font-size: 13px;
+}
+
+</style>
+<body>
+
+    <div class= "s1"><i style="font-size: 15px;">have it by Thanksgiving!</i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <span>Order by 11/12, 1 PM ET with Standard Shipping</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a style="color: #fff;"  href="shopGifts.html"><u>shop gifts</u></a></span></div>
+  
+    <!-- signin and signup -->
+    <div class="signIn-signUp">
+      <span>
+        <i class="fas fa-globe"></i>&nbsp;&nbsp;English ($)&nbsp;<i class="fas fa-chevron-down"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span>
+      <a href="signin.html" id="show-login"><span class="login">
+        <i class="far fa-user"></i>
+         Sign In / Sign Up
+        </span></a>
+       
+    </div>
+
+
+     <!-- NAVIGATION-BAR -->
+     <nav>
+      <div class="wrapper">
+        <div class="logo"><a href="index.html"><img src="https://images.ctfassets.net/5de70he6op10/4ZrgvwZk7dhamiSvXf9PJY/10269715f60f294c463cf63a903e6575/Anthropologie_TypeLogo_gold__1_.png" alt=""></a></div>
+        <ul class="nav-links">
+          <li><a href="#">Gifts and Candles</a></li>
+          <li><a href="#">New!</a></li>
+          <li><a href="#">Dresses</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Home & Furniture</a></li>
+          <li><a href="#">Beauty & Wellness</a></li>
+          <li><a href="#">Garden & Outdoor</a></li>
+          <li><a href="#">Wedding</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </div>
+    </nav>
+      <!-- POPUP-SIGNUP -->
+      <div class="popup">
+            <div class="form">
+                <h2>Create an Account</h2>
+                <hr>
+                <p class="sign-up">Welcome to Anthropologie! It's quick and easy to set up an account.</p>
+
+                <div class="form-element">
+                    <label for="email">Email*</label>
+                    <input type="text" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-element">
+                    <label for="password">Password*</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+                
+                <div class="form-element">
+                    <button id="signIN">CREATE AN ACCOUNT</button>
+                </div>
+                
+                <hr>
+                <h2>Already have an Account?</h2>
+                <p class="sign-up">Welcome! It's quick and easy to set up an account</p>
+  
+                <div class="create-account">
+                  <a href="signin.html"><button id="signIN">SIGN IN</button></a>
+                </div>
+  
+            </div>
+      </div>
+
+             <!--Footer-->
+ <div class="Large-Footer-Container">
+
+  <div class="container-3">
+     <form aria-label="Signup for Anthrologie Emails" class="sign-email">
+         <div class="footer-sign-up">
+             <div class="f-1">
+                 <p class="footer-heading">
+                     Signup for Anthrologie Emails
+                 </p>
+                 <p class="f-descript">
+                     Receive early access to new arrivals, sales, exclusives, events and much more!
+                 </p>
+             </div>
+             <div class="f-2">
+             <div class="input-Email">
+                 <label for="email-sign-up" class='email-address'>
+                     Email Address
+                 </label>
+                 <div></div>
+                 <input id="email-signup-email" name="email" type="email" required="required" value class="'input-email"> 
+             </div>
+             <div class="submit-button">
+                 <button id="email-address-submit" type="submit" class="primary-submit-button"> Submit </button>
+             </div>
+             </div>
+         </div>
+     </form>
+ </div>
+
+ <!--Footer Below-->
+ <div class="Footer-Container">
+     <div class="Footer-2">
+         <div class="footer-help">
+             <ul>
+                 <li class="FF">Help</li>
+                 <br>
+                 <li>Track Your Order</li>
+                 <li>Start A Return Or Exchange</li>
+                 <li>Return & Exchange</li>
+                 <li>Shipping</li>
+                 <li>Customer Services</li>
+                 <li>Current Promotions</li>
+                 <li>COVID-19 Update</li>
+             </ul>
+         </div>
+         <div class="About-us">
+             <ul>
+                 <li class="FF">About Us</li>
+                 <br>
+                 <li>Our Story</li>
+                 <li>Events</li>
+                 <li>A Greater Good</li>
+                 <li>Diversity & Inclusion</li>
+             </ul>
+         </div>
+         <div class="Service">
+             <ul>
+                 <li class="FF">Services</li>
+                 <br>
+                 <li>AnthroPerks</li>
+                 <li>Gift Cards</li>
+                 <li>Trade Membership</li>
+                 <li>Furniture: Guides & Services</li>
+                 <li>Store Pickup & Collection Points</li>
+             </ul>
+         </div>
+         <div class="Connect">
+             <ul>
+                 <li class="FF">Connect</li>
+                 <br>
+                 <li>Contact Us</li>
+                 <li>Stay Connected</li>
+                 <li>Careers</li>
+                 <li>Styling Services</li>
+                 <li>Request A Catalog</li>
+             </ul>
+         </div>
+         <div class="Other">
+             <a href="#">Store Locator </a>
+             <br>
+             <a href="#"> Get Email</a>
+         </div>
+
+     </div>
+
+ </div>
+
+<div class="container-3">
+ <div class="Footer-Img">
+     <img width=1441 src="https://images.ctfassets.net/5de70he6op10/1k3lZuMcopQdkMdEiQDoq4/9109a3350f6343e801506ae29122e398/Oct21_HolidayDigitalMarketingAssets_GiftGuideFooter_LS.jpg">    
+ </div>
+</div>
+<div class="container-3">
+ <div class="extra-sites">
+     <ul class="State-list">
+         <li class="State">US</li>
+         <li class="State">France</li>
+         <li class="State">Germany</li>
+         <li class="State1">UK</li>
+     </ul>
+ </div>
+</div>
+
+<div class="container-3 Extra">
+ <div class="listed-extra">
+     <ul class="UL-List">
+         <li class="List-extra">Privacy Policy </li>
+         <li class="List-extra">Terms of Use </li>
+         <li class="List-extra"> CA Trasparenc </li>
+         <li class="List-extra">Accessibility </li>
+         <li class="List-extra">URBN.com </li>
+         <li class="List-extra1">For CA Residents </li>
+         
+         
+         
+     </ul>
+
+ </div>
+ <div class="Credit">
+     <p>   2021 URBN.com. All Rights Reserved</p>      
+ </div>
+
+</div>
+
+</div>
+</body>
+</html>

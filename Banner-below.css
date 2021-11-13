@@ -1,0 +1,131 @@
+.main-conatiner{
+    position: relative;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+.Large-Container{
+    margin-bottom: 40px;
+
+}
+.container{
+    display: flex;
+    margin: auto;
+    margin-top:20px;
+    justify-content: center;
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 13px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 20px;
+}
+.img-1{
+    display: grid;
+}
+.Container{
+    display: grid;
+    margin:0 auto;
+    justify-content: center;
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 13px;
+    max-width: 1561px;
+    /* width: 100%;
+    margin-left: 15%;
+    margin-right: 15%; */
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+.Container-heading{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e5e2d2;
+}
+.heading{
+    margin-bottom: 20px;
+    color: #26262c;
+}
+.Explore-heading{
+    text-align: center;
+    border-bottom: 1px solid #e5e2d2;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #26262c;
+}
+.Explore-top{
+    grid-area: exp-top;
+}
+
+.Explore-1{
+    grid-area: exp-1;
+}
+
+.Explore-2{
+    grid-area: exp-2;
+}
+
+.Explore-3{
+    grid-area: exp-3;
+}
+.Explore-middle{
+    display: grid;
+    grid-area: exp-mid;
+    grid-gap: 20px;
+    grid-template-areas: "exp-1 exp-2 exp-3";
+}
+
+.Explore{
+    display: grid;
+    grid-gap:10px;
+    grid-template-areas: "exp-top" "exp-mid";
+    font-size: 14px;
+}
+
+h3{
+    margin-bottom: 10px;
+}
+.Explore-dd{
+    margin-bottom: 10px;
+
+}
+
+.info-p,.info-a{
+    font-size: 13px;
+    letter-spacing: .06rem;
+    margin: 0 0 20px;
+    margin-bottom: 20px;
+}
+.info-a{
+    color: #167A92;
+}
+
+@media (min-width:768) {
+    .container{
+        padding-top: 30px;
+    }
+    
+}
+
+/* About*/
+.About-container{
+    display: grid;
+    justify-content: center;
+    border-top: 1px solid #e5e2de;
+}
+.About{
+    display: grid;
+    justify-content: center;
+    margin: 0 auto; 
+           }
+.about-p{
+    font-weight: 600;
+    font-size: 20px;
+    border-top: 1px solid #e5e2de;
+    padding-top: 20px;
+}
+.about-p-1{
+    padding-top: 20px;
+    letter-spacing: 0.06rem;
+}

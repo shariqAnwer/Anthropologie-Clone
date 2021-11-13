@@ -1,0 +1,145 @@
+
+.Large-Footer-Container{
+    background-color: #f7f6f2;
+         
+
+}
+
+.Footer-Container{
+    margin-top: 25px;
+} 
+.container-3{
+    display: grid;
+    margin: 0 auto;
+    margin-top:20px;
+    justify-content: center;
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 13px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+ 
+.sign-mail{
+            background-color: #f7f6f2;
+            border-top: 1px solid #e5e2de;
+        }
+        .sign-mail{
+            display: grid;
+        }
+        
+        .f-1{
+            grid-area: f-1;
+            grid-column-end: 5;
+        }
+        .f-2{
+            grid-area: f-2;
+        }
+        .footer-sign-up{
+            display: grid;
+            grid-template-areas: 'f-1 f-1 f-1 f-1 f-2 f-2';           
+
+        }
+        .input-email{
+            width:100%;
+            min-height: 45px;
+            border: 1px solid #939395;
+            letter-spacing: .06rem;
+            background-color: #fdfdf9;
+        }
+        /* Footer-below */
+
+        .footer-help{
+            grid-area: help1;
+
+        }
+        ul{
+            list-style: none;
+        }
+        li{
+            margin-top: 10px;
+        }
+
+        .About-us{
+            grid-area: about1;
+
+        }
+        .Service{
+            grid-area: service1;
+        }
+        .Connect{
+            grid-area: connect1;
+        }
+        .Other{
+            grid-area: extra;
+        }
+        .Footer-2{
+            display: grid;
+            grid-gap: 15px;
+            grid-template-areas: 'help1 about1 service1 connect1 extra' ;
+            list-style: none;
+        }
+        .Footer-Container{
+            background-color: #f7f6f2;
+            border-top: 1px solid #e5e2de;
+            display: grid;
+            grid-template-areas: 'help1 about1 service1 connect1 extra' ;
+            justify-content: center;
+        }
+
+        /*Links*/
+        .c-pwa-social__list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Lower-Footer*/
+        .State-list{
+            list-style: none ;
+        }
+        .State1{
+            padding-right: 10px;
+            display: inline-block;
+            margin-right: 10px; 
+        }
+
+        .State{
+            padding-right: 10px;
+            display: inline-block;
+            margin-right: 10px;
+            border-right: 1px solid #ccc;
+
+        }
+
+
+        /* Extra*/
+        .Extra{
+            grid-template-columns: repeat(12,1fr);
+
+
+        }
+        .listed-extra{
+            grid-column-start: 2;
+            grid-column-end: 7;
+        
+        }
+        .List-extra{
+            list-style: none;
+            display: inline-block;
+            padding-right: 10px;
+            margin-right: 10px;
+            border-right: 1px solid #ccc;
+            color:#167a92;
+            margin: 0 0 20px;
+        }
+        .List-extra1{
+            list-style: none;
+            display: inline-block;
+            margin: 0 0 20px;
+
+        }
+
+        .Credit{
+            grid-column-start: 10;
+            grid-column-end: 12 ;
+            margin: 0 0 20px;;
+        }
